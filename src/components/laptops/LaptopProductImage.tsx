@@ -1,9 +1,12 @@
 "use client";
 
-import { LAPTOP_IMAGE_FALLBACK } from "@/lib/laptop-images";
+import {
+  LAPTOP_IMAGE_FALLBACK,
+  resolvePublicImageSrc,
+} from "@/lib/laptop-images";
 import { cn } from "@/lib/cn";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type LaptopProductImageProps = {
   src: string;
@@ -15,6 +18,10 @@ type LaptopProductImageProps = {
   subdued?: boolean;
 };
 
+function isLocalPublicPath(src: string): boolean {
+  return src.startsWith("/") && !src.startsWith("//");
+}
+
 export function LaptopProductImage({
   src,
   alt,
@@ -24,17 +31,24 @@ export function LaptopProductImage({
   priority,
   subdued,
 }: LaptopProductImageProps) {
-  const [currentSrc, setCurrentSrc] = useState(
-    src?.trim() ? src : LAPTOP_IMAGE_FALLBACK,
+  const [currentSrc, setCurrentSrc] = useState(() =>
+    resolvePublicImageSrc(src),
   );
 
+  useEffect(() => {
+    setCurrentSrc(resolvePublicImageSrc(src));
+  }, [src]);
+
+  const useUnoptimized = isLocalPublicPath(currentSrc);
+
   return (
-    <div className={cn("relative bg-[#F7F8FA]", className)}>
+    <div className={cn("relative h-full w-full bg-[#F7F8FA]", className)}>
       <Image
         src={currentSrc}
         alt={alt}
         fill
         priority={priority}
+        unoptimized={useUnoptimized}
         className={cn(
           "object-contain p-2",
           subdued && "grayscale opacity-90",
