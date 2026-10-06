@@ -6,6 +6,9 @@ export const SITE_TAGLINE =
 export const FINDS_NAME = "Kaarthik Finds";
 export const FINDS_TAGLINE =
   "Honest laptop picks for students, coders & creators.";
+/** Shown in /laptops footer — update when prices are rechecked on Amazon. */
+export const FINDS_PRICES_LAST_UPDATED = "30 Sep 2026";
+export const KAARTHIKFORU_BRAND = "KaarthikForU";
 export const FINDS_PROMO_LINE =
   "Curated for KaarthikForU · Sample prices until updated";
 

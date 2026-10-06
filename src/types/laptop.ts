@@ -48,6 +48,8 @@ export interface Laptop {
   recommendationScore: number;
   recommendationLabel: string;
   badge?: string;
+  /** Highlighted hero on /laptops (students & coding pick). */
+  studentPick?: boolean;
   editorPick?: boolean;
   honestNote?: string;
   pros?: string[];

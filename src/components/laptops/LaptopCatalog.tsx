@@ -62,11 +62,8 @@ export function LaptopCatalog({ laptops, initialFilters }: LaptopCatalogProps) {
     filters.sort === "recommended";
 
   const visibleLaptops = useMemo(
-    () =>
-      getVisibleCatalogLaptops(laptops, filters, {
-        excludeEditorPick: Boolean(showFeatured),
-      }),
-    [laptops, filters, showFeatured],
+    () => getVisibleCatalogLaptops(laptops, filters),
+    [laptops, filters],
   );
 
   const openDetails = useCallback((laptop: Laptop) => {
@@ -79,7 +76,10 @@ export function LaptopCatalog({ laptops, initialFilters }: LaptopCatalogProps) {
 
   return (
     <>
-      <div className="sticky top-0 z-50 -mx-4 border-b border-border bg-surface/98 px-4 pb-2 pt-1.5 backdrop-blur-[2px] sm:-mx-6 sm:px-6">
+      <div
+        id="laptop-catalogue"
+        className="sticky top-0 z-50 -mx-4 scroll-mt-4 border-b border-border bg-[#FAFAF7]/98 px-4 pb-2 pt-1.5 backdrop-blur-[2px] sm:-mx-6 sm:px-6"
+      >
         <LaptopFilters
           filters={filters}
           onBudgetChange={(budget) => updateFilters({ ...filters, budget })}
@@ -99,7 +99,7 @@ export function LaptopCatalog({ laptops, initialFilters }: LaptopCatalogProps) {
       </div>
 
       {showFeatured && featured ? (
-        <div className="mt-4">
+        <div id="student-coding-pick" className="mt-4 scroll-mt-4">
           <FeaturedLaptop laptop={featured} onOpenDetails={openDetails} />
         </div>
       ) : null}

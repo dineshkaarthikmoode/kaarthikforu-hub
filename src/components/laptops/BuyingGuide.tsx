@@ -3,8 +3,9 @@ import { buyingGuideTopics } from "@/lib/buying-guide-content";
 export function BuyingGuide() {
   return (
     <section
+      id="buying-guide"
       aria-labelledby="buying-guide-heading"
-      className="mt-8 rounded-[10px] border border-border bg-card p-4 sm:mt-10 sm:p-5"
+      className="mt-8 scroll-mt-6 rounded-[10px] border border-border bg-card p-4 sm:mt-10 sm:p-5"
     >
       <h2
         id="buying-guide-heading"

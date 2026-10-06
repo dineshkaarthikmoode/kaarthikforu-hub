@@ -33,7 +33,9 @@ export function getCatalogLaptops(laptops: Laptop[]): Laptop[] {
 }
 
 export function getFeaturedLaptop(laptops: Laptop[]): Laptop | undefined {
-  return laptops.find((l) => l.editorPick && !isSkippedLaptop(l));
+  return laptops.find(
+    (l) => (l.studentPick || l.editorPick) && !isSkippedLaptop(l),
+  );
 }
 
 function matchesUseCase(
@@ -84,13 +86,9 @@ export function sortLaptops(laptops: Laptop[], sort: SortOption): Laptop[] {
 export function getVisibleCatalogLaptops(
   laptops: Laptop[],
   filters: LaptopFilterState,
-  options?: { excludeEditorPick?: boolean },
 ): Laptop[] {
   const base = getCatalogLaptops(laptops);
-  let filtered = filterLaptops(base, filters);
-  if (options?.excludeEditorPick) {
-    filtered = filtered.filter((l) => !l.editorPick);
-  }
+  const filtered = filterLaptops(base, filters);
   return sortLaptops(filtered, filters.sort);
 }
 

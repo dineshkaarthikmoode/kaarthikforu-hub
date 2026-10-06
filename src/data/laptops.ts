@@ -42,7 +42,7 @@ export const laptops: Laptop[] = [
       "4GB/64GB",
       "18 reviews"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0H2J8DDKH?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B09OESJEM",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -61,7 +61,7 @@ export const laptops: Laptop[] = [
     "image": "/images/laptops/B0GV15KBMK.webp",
     "processor": "Intel N50",
     "ram": "8GB",
-    "storage": "ChromeOS",
+    "storage": "128GB",
     "display": "Not specified",
     "weight": "Not specified",
     "operatingSystem": "ChromeOS",
@@ -83,7 +83,7 @@ export const laptops: Laptop[] = [
       "Not Windows",
       "30 reviews"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0GV15KBMK?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B07fNGnbG",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -124,7 +124,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "8GB soldered, 256GB, HD TN"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0GYRK1RZC?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B0grvI3Cy",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -167,7 +167,7 @@ export const laptops: Laptop[] = [
       "TN panel",
       "older chip"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0DG2GCTD7?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B05aiQUJv",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -207,7 +207,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "Prefer 16GB version B0GV1L119H"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0FZKZTXSN?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B09uqECpa",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -219,15 +219,15 @@ export const laptops: Laptop[] = [
     "brand": "ASUS",
     "shortDescription": "Strong everyday laptop choice for students learning programming and development.",
     "price": 69990,
-    "mrp": 0,
+    "mrp": 69990,
     "discountPercentage": 0,
     "rating": 4.1,
     "reviewCount": 481,
     "image": "/images/laptops/B0DTYKLHYC.webp",
     "processor": "i5-13420H",
     "ram": "16GB",
-    "storage": "512GB",
-    "display": "15.6 FHD",
+    "storage": "512GB SSD",
+    "display": "15.6in FHD",
     "weight": "Not specified",
     "operatingSystem": "Windows 11 Home",
     "budgetCategory": "60-80k",
@@ -236,8 +236,9 @@ export const laptops: Laptop[] = [
       "students"
     ],
     "recommendationScore": 86,
-    "recommendationLabel": "Top pick",
-    "badge": "Top pick",
+    "recommendationLabel": "Best for students & coding",
+    "badge": "Students pick",
+    "studentPick": true,
     "honestNote": "Battery average; basic graphics",
     "pros": [
       "i5-13420H",
@@ -249,15 +250,15 @@ export const laptops: Laptop[] = [
       "Battery average",
       "basic graphics"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0DTYKLHYC?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B0hJkIqkC",
     "lastChecked": "2026-09-30",
-    "featured": false,
+    "featured": true,
     "status": "active"
   },
   {
     "id": "lp-007",
-    "slug": "dell-15-core-3-100u",
-    "name": "Dell 15 Core 3 100U",
+    "slug": "dell-15-core-3-100u-16gb",
+    "name": "Dell 15 Core 3 100U (16GB)",
     "brand": "Dell",
     "shortDescription": "Practical laptop for office work, home use, and everyday productivity.",
     "price": 66490,
@@ -289,7 +290,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "Core 3 is entry level"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0GV1L119H?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B08UDCmyd",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -329,7 +330,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "16 reviews"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0FMRSDQL2?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B02DibMS2",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -370,7 +371,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "U-series, not for gaming"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0DSFQZTVW?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B0gbkk23u",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -410,7 +411,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "Only 2 left on 30 Sep"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0F5W5FLPP?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B0aSfLbUf",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -452,7 +453,7 @@ export const laptops: Laptop[] = [
       "4 reviews",
       "4GB VRAM"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0H6J2QR44?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B04TYbrfH",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -494,7 +495,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "15 reviews"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0GWHGS8P5?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B03WxlPgR",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -513,8 +514,8 @@ export const laptops: Laptop[] = [
     "image": "/images/laptops/B0DTYHT8MN.webp",
     "processor": "Snapdragon X",
     "ram": "16GB",
-    "storage": "OLED",
-    "display": "Not specified",
+    "storage": "512GB SSD",
+    "display": "14in OLED",
     "weight": "Not specified",
     "operatingSystem": "Windows 11 Home",
     "budgetCategory": "80-120k",
@@ -535,7 +536,7 @@ export const laptops: Laptop[] = [
       "ARM app compatibility",
       "11 reviews"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0DTYHT8MN?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B0dZsB0cE",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -574,7 +575,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "Heavier than ultrabooks"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0DXVGVNKN?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B038oe0Pi",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -613,7 +614,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "Only 2 left on 30 Sep"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0DDQ6HFR8?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B0aDcCgp0",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -655,7 +656,7 @@ export const laptops: Laptop[] = [
       "2 reviews",
       "2.3 kg"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0H25X3W7F?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B0a1TbpJi",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -696,7 +697,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "1 review"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0GTZJVD3Y?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B0j6yIRjU",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -737,7 +738,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "Teaser unreadable"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0G46HR61G?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B04Ou6SFY",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -755,8 +756,9 @@ export const laptops: Laptop[] = [
     "reviewCount": 142,
     "image": "/images/laptops/B0FJYJP1L6.webp",
     "processor": "Ryzen 7 7445HS",
-    "ram": "RTX 4050 6GB",
-    "storage": "16GB DDR5",
+    "ram": "16GB DDR5",
+    "storage": "512GB SSD",
+    "gpu": "RTX 4050 6GB",
     "display": "Not specified",
     "weight": "Not specified",
     "operatingSystem": "Windows 11 Home",
@@ -778,7 +780,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "Check GPU TGP in reviews"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0FJYJP1L6?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B03NGe3o9",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -809,7 +811,6 @@ export const laptops: Laptop[] = [
     "recommendationScore": 65,
     "recommendationLabel": "Best for gaming + AI",
     "badge": "Best for gaming + AI",
-    "editorPick": true,
     "honestNote": "Sale teaser suggests waiting for 8 Oct; only 6 reviews so far — compare price before you buy.",
     "pros": [
       "Intel Core i7-13650HX",
@@ -821,9 +822,9 @@ export const laptops: Laptop[] = [
     "cons": [
       "6 reviews"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0GT11NJ6T?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B0dTfacq7",
     "lastChecked": "2026-09-30",
-    "featured": true,
+    "featured": false,
     "status": "active"
   },
   {
@@ -862,7 +863,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "No reviews shown"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0H265CG8K?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B08Txo8Ek",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -902,7 +903,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "No reviews shown"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0HCP993SM?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B04wzZCHT",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -943,7 +944,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "4 reviews"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0H9XCDLBW?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B047myO30",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -983,7 +984,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "₹12K more than Alienware, same GPU"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0G3V4R8LK?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B0faQGh9U",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -1024,7 +1025,7 @@ export const laptops: Laptop[] = [
     "cons": [
       "Not for students"
     ],
-    "affiliateUrl": "https://www.amazon.in/dp/B0FYPY8SKG?tag=swaroop057-21",
+    "affiliateUrl": "https://link.amazon/B0eaOVtH2",
     "lastChecked": "2026-09-30",
     "featured": false,
     "status": "active"
@@ -1051,7 +1052,7 @@ export const laptops: Laptop[] = [
     recommendationScore: 32,
     recommendationLabel: "Skip",
     honestNote: "8GB soldered; Aspire Lite gives 16GB",
-    affiliateUrl: "https://www.amazon.in/dp/B0FJYJ8LVY?tag=swaroop057-21",
+    affiliateUrl: "https://link.amazon/B0cAqQcxg",
     lastChecked: "2026-09-30",
     status: "skip",
     skipReason: "Skip: 8GB soldered RAM — prefer 16GB picks in this budget",
@@ -1078,7 +1079,7 @@ export const laptops: Laptop[] = [
     recommendationScore: 35,
     recommendationLabel: "Skip",
     honestNote: "2021-era chip behind 'Ryzen 7' marketing",
-    affiliateUrl: "https://www.amazon.in/dp/B0FC2LKFSC?tag=swaroop057-21",
+    affiliateUrl: "https://link.amazon/B06feSXAW",
     lastChecked: "2026-09-30",
     status: "skip",
     skipReason: "Skip: 2021 chip — weak value at current price",

@@ -1,10 +1,12 @@
 "use client";
 
 import { LaptopProductImage } from "@/components/laptops/LaptopProductImage";
+import { LinkButton } from "@/components/ui/Button";
 import { Rating } from "@/components/ui/Rating";
 import { formatInr, formatPriceAsOf } from "@/lib/format";
 import { cn } from "@/lib/cn";
 import type { Laptop } from "@/types/laptop";
+import type { KeyboardEvent } from "react";
 
 const ctaClass =
   "flex h-10 w-full items-center justify-center rounded-[20px] bg-cta text-[13px] font-medium text-[#171717] transition-colors hover:bg-cta-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5b8def]";
@@ -22,6 +24,13 @@ export function LaptopCard({
 }: LaptopCardProps) {
   const open = () => onOpenDetails?.(laptop);
 
+  const onCardKeyDown = (event: KeyboardEvent<HTMLElement>) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      open();
+    }
+  };
+
   return (
     <article
       className={cn(
@@ -30,10 +39,12 @@ export function LaptopCard({
       )}
       data-slug={laptop.slug}
     >
-      <button
-        type="button"
+      <div
+        role="button"
+        tabIndex={0}
         onClick={open}
-        className="flex flex-1 flex-col text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5b8def]"
+        onKeyDown={onCardKeyDown}
+        className="flex flex-1 cursor-pointer flex-col text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5b8def]"
       >
         <div className="relative aspect-[4/3] w-full">
           {laptop.discountPercentage > 0 && !subdued ? (
@@ -75,15 +86,17 @@ export function LaptopCard({
             <p className="mt-0.5 text-[11px] font-normal text-muted">
               as of {formatPriceAsOf(laptop.lastChecked)}
             </p>
-            <p className="mt-0.5 text-[11px] font-normal text-muted">
-              M.R.P.{" "}
-              <span className="line-through">{formatInr(laptop.mrp)}</span>
-              {!subdued && laptop.discountPercentage > 0 ? (
-                <span className="ml-1 text-[#c5221f]">
-                  {laptop.discountPercentage}% off
-                </span>
-              ) : null}
-            </p>
+            {laptop.mrp > laptop.price && laptop.discountPercentage > 0 ? (
+              <p className="mt-0.5 text-[11px] font-normal text-muted">
+                M.R.P.{" "}
+                <span className="line-through">{formatInr(laptop.mrp)}</span>
+                {!subdued ? (
+                  <span className="ml-1 text-[#c5221f]">
+                    {laptop.discountPercentage}% off
+                  </span>
+                ) : null}
+              </p>
+            ) : null}
           </div>
 
           {subdued ? (
@@ -92,12 +105,20 @@ export function LaptopCard({
             </p>
           ) : null}
         </div>
-      </button>
+      </div>
 
-      <div className="px-2.5 pb-2.5">
-        <button type="button" onClick={open} className={ctaClass}>
+      <div
+        className="px-2.5 pb-2.5"
+        onClick={(event) => event.stopPropagation()}
+        onKeyDown={(event) => event.stopPropagation()}
+      >
+        <LinkButton
+          href={laptop.affiliateUrl}
+          external
+          className={cn(ctaClass, "min-h-0 rounded-[20px] px-3 py-0")}
+        >
           View on Amazon
-        </button>
+        </LinkButton>
       </div>
     </article>
   );
